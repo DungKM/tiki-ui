@@ -1,0 +1,48 @@
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.wrapper::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  /* Hide scrollbar for Firefox and non-WebKit browsers */
+  .wrapper {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+.wrapper{
+    width: 230px;
+    max-height: 100vh;
+    position: sticky;
+    overflow-y: scroll;
+    top: 16px;
+    display: flex;
+    background-color: transparent;
+    padding-bottom: 117px;
+    flex-direction: column;
+    color: rgb(56, 56, 61);
+    font-size: 14px;
+    line-height: 20px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.list-item{
+    position: relative;
+    display: flex;
+    margin-bottom: 16px;
+    padding: 12px 8px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.title{
+    margin-bottom: 8px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}

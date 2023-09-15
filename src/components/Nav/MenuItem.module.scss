@@ -17,7 +17,7 @@
         .active-icon {
             display: flex;
         }
-        .title{
+        .titleAction{
             color: rgb(10, 104, 255);
             font-weight: 600;
             font-size: 14px;
@@ -31,7 +31,7 @@
         background-color: rgba(39, 39, 42, 0.12);
     }
 }
-.title{
+.titleAction{
     display: flex;
     font-size: 14px;
     line-height: 150%;
@@ -72,8 +72,15 @@
     border: 1px solid rgb(235, 235, 240);
     }
 }
-.icon-img{
+.iconImage{
     width: 24px;
     height: 24px;
     margin-right: 4px;
+}
+.iconCategory{
+    width: 34px;
+    height: 100%;
+    margin-right: 10px;
+    display: block;
+    transition: opacity 250ms ease-in-out 0s;
 }

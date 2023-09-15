@@ -2,7 +2,26 @@ import { NavLink } from "react-router-dom";
 import styles from "./MenuItem.module.scss";
 import classNames from "classnames/bind";
 const cx = classNames.bind(styles);
-function MenuItem({ to, title, icon, activeIcon, activeIconOrder, numberOrder=false }) {
+function MenuItem({
+  iconImage = false,
+  iconCategory = false,
+  titleAction = false,
+  titleCategory = false,
+  to,
+  title,
+  icon,
+  activeIcon,
+  activeIconOrder,
+  numberOrder = false,
+}) {
+  let classesIcon = cx({
+    iconImage,
+    iconCategory,
+  });
+  let classesTitle = cx({
+    titleAction,
+    titleCategory,
+  });
   return (
     <NavLink
       to={to}
@@ -11,14 +30,13 @@ function MenuItem({ to, title, icon, activeIcon, activeIconOrder, numberOrder=fa
       }
     >
       <span className={cx("icon")}>
-        <img src={icon} className={cx("icon-img")} />
-     {numberOrder &&  <span className={cx("number-orders")}>0</span>} 
+        <img src={icon} className={classesIcon} />
+        {numberOrder && <span className={cx("number-orders")}>0</span>}
       </span>
       <span className={cx("active-icon")}>
-        <img src={activeIcon} className={cx("icon-img")} />
+        <img src={activeIcon} className={classesIcon} />
       </span>
-      <span className={cx("title")}>{title}</span>
-      
+      <span className={classesTitle}>{title}</span>
     </NavLink>
   );
 }

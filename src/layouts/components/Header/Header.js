@@ -76,24 +76,32 @@ function Header() {
 
               <Menu className={cx("user-shortcut")}>
                 <MenuItem
+                  titleAction
+                  iconImage
                   to={config.routes.home}
                   title="Trang chủ"
                   icon={Images.HomeIcon}
                   activeIcon={Images.HomeIconActive}
                 />
                 <MenuItem
+                  titleAction
+                  iconImage
                   to={config.routes.astra}
                   title="Astra"
                   icon={Images.AstraIcon}
                   activeIcon={Images.AstraIconActive}
                 />
                 <MenuItem
+                  titleAction
+                  iconImage
                   to={config.routes.account}
                   title="Tài Khoản"
                   icon={Images.AccountIcon}
                   activeIcon={Images.AccountIcon}
                 />
                 <MenuItem
+                  titleAction
+                  iconImage
                   to={config.routes.order}
                   numberOrder
                   activeIconOrder
@@ -117,10 +125,16 @@ function Header() {
                 <Category itemCategory>bách hóa</Category>
               </ListCategory>
               <div className={cx("location")}>
-                <div className = {cx('delivery')}>
-                  <img src="https://salt.tikicdn.com/ts/upload/88/5c/9d/f5ee506836792eb7775e527ef8350a44.png" alt="header-icon-location" />
-                  <h4 className = {cx('title')} >Giao đến:</h4>
-                  <div className = {cx('address')} >Q. Hoàn Kiếm, P. Hàng Trống, Hà Nội</div></div>
+                <div className={cx("delivery")}>
+                  <img
+                    src="https://salt.tikicdn.com/ts/upload/88/5c/9d/f5ee506836792eb7775e527ef8350a44.png"
+                    alt="header-icon-location"
+                  />
+                  <h4 className={cx("title")}>Giao đến:</h4>
+                  <div className={cx("address")}>
+                    Q. Hoàn Kiếm, P. Hàng Trống, Hà Nội
+                  </div>
+                </div>
               </div>
             </div>
           </div>

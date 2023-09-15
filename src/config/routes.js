@@ -5,6 +5,7 @@ const routes = {
     order: '/order',
     astra: '/astra',
     account: '/account',
+    itemcategory: '/item-category',
 };
 
 export default routes;
