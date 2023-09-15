@@ -1,0 +1,18 @@
+.list-category{
+    display: flex;
+    height: 24px;
+    width: 712px;
+    margin-top: 8px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.itemCategory{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(128, 128, 137) !important;
+    margin-right: 12px;
+    white-space: nowrap;
+}

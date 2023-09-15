@@ -1,0 +1,17 @@
+.wrapper {
+    width: 1280px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #f5f5fa;
+}
+.container {
+    display: flex;
+    padding-top: 16px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.content{
+   flex: 1;
+}

@@ -1,0 +1,42 @@
+.wrapper{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+}
+.title{
+    font-size: 14px;
+    line-height: 150%;
+}
+.normal{
+    color: rgb(128, 128, 137);
+    font-weight: 400;
+    &:hover{
+        background-color: rgba(39, 39, 42, 0.12);
+    }
+
+}
+.info{
+    color: rgb(10, 104, 255);
+    font-weight: 600;
+    &:hover{
+        background-color: rgba(0, 96, 255, 0.12);
+    }
+    &:active{
+    color: rgb(10, 104, 255);
+    font-weight: 500;
+    line-height: 150%;
+    background-color: rgba(0, 96, 255, 0.24);
+    }
+}
+.icon-img{
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    border-radius: 50%;
+}
