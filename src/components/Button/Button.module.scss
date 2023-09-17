@@ -1,17 +1,36 @@
 .wrapper{
     display: flex;
     -webkit-box-align: center;
-    align-items: center;
     -webkit-box-pack: center;
+    align-items: center;
     justify-content: center;
-    padding: 8px 16px;
     cursor: pointer;
     position: relative;
     border-radius: 8px;
+    gap: 8px;
+    &::after{
+        display: block;
+    content: "";
+    height: 12px;
+    width: 1px;
+    background-color: rgb(235, 235, 240);
+    }
+    &:last-of-type::after {
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+    }
+
 }
 .title{
+    display: flex;
+    gap: 8px;
     font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
     line-height: 150%;
+    color: rgb(39, 39, 42);
 }
 .normal{
     color: rgb(128, 128, 137);
@@ -37,6 +56,7 @@
 .icon-img{
     width: 24px;
     height: 24px;
-    margin-right: 4px;
-    border-radius: 50%;
+}
+.imageIconRight{
+    color: rgb(10, 104, 255);
 }

@@ -14,6 +14,10 @@ const Images = {
   OrderIcon:
     "https://salt.tikicdn.com/ts/upload/51/e2/92/8ca7e2cc5ede8c09e34d1beb50267f4f.png",
   CategoryIcon: 
-  "https://salt.tikicdn.com/cache/100x100/ts/category/13/64/43/226301adcc7660ffcf44a61bb6df99b7.png.webp"
+  "https://salt.tikicdn.com/cache/100x100/ts/category/13/64/43/226301adcc7660ffcf44a61bb6df99b7.png.webp",
+  CheckIcon:'https://salt.tikicdn.com/ts/upload/2e/05/69/fd3c678658e51a804f8186b7757b9ab3.png',
+  UserIcon:'https://salt.tikicdn.com/ts/upload/6e/96/02/668c2817ae81b7418fa54e39e19af772.png',
+  DeliveryIcon : 'https://salt.tikicdn.com/ts/upload/51/b2/63/7cb5492a2c21064f92c299e82a1c41bf.png',
+  NextIcon: 'https://salt.tikicdn.com/ts/upload/16/42/c1/23a144e53aadf0357f6cd2c98b525902.png'
 };
 export default Images;

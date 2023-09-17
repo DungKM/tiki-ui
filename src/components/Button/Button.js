@@ -1,6 +1,5 @@
 import classNames from "classnames/bind";
 import styles from "./Button.module.scss";
-import Images from "~/components/Image";
 import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
@@ -13,6 +12,8 @@ function Button({
   normal,
   HomeIcon,
   info,
+  imageIcon,
+  imageIconRight,
   ...passProps
 }) {
   let Comp = "button";
@@ -32,11 +33,15 @@ function Button({
     normal,
   });
   return (
-    <div>
+  
       <Comp className={classes} {...props}>
-        <span className={cx("title")}>{children}</span>
+        {imageIcon && <img src={imageIcon} className={cx("icon-img")} />}
+        <span className={cx("title", { imageIconRight })}>{children}</span>
+        {imageIconRight && (
+          <img src={imageIconRight} className={cx("icon-img")} />
+        )}
       </Comp>
-    </div>
+   
   );
 }
 

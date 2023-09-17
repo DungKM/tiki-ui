@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background: white;
+    border-radius: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.tag-list{
+    display: flex;
+
+    gap: 16px;
+}
+.item-next{
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-overflow: ellipsis;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(10, 104, 255);
+}

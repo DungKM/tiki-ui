@@ -1,0 +1,16 @@
+.wrapper{
+    width: calc(100% - 254px);
+    overflow-x: hidden;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.banner-slider{
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-radius: 4px;
+    overflow: hidden;
+    column-gap: 16px;
+}

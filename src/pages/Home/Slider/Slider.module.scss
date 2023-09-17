@@ -1,0 +1,10 @@
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    overflow: hidden;
+    flex-basis: 75%;
+}
